@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PAGE settings -->
+  <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
+  <title>Restaurant Aquamarine - Pingendo template</title>
+  <meta name="description" content="Free Bootstrap 4 Pingendo Aquamarine template for restaurant and food">
+  <meta name="keywords" content="Pingendo restaurant food aquamarine free template bootstrap 4">
+  <!-- CSS dependencies -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="{{ url_for('static',filename='aquamarine.css') }}" type="text/css">
+  <!-- Script: Make my navbar transparent when the document is scrolled to top -->
+  <script src="{{ url_for('static',filename='js/navbar-ontop.js') }}"></script>
+  <!-- Script: Animated entrance -->
+  <script src="{{ url_for('static',filename='js/animate-in.js') }}"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar3SupportedContent" aria-controls="navbar3SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse text-center justify-content-center" id="navbar3SupportedContent">
+        <a class="btn navbar-btn btn-secondary mx-2" href="/"><b contenteditable="true">Homepage</b></a>
+      </div>
+    </div>
+  </nav>
+  <!-- Cover -->
+  <div class="align-items-center d-flex cover section-aquamarine py-5" style="background-image: url(&quot;{{ url_for('static',filename='assets/cover_light.jpg') }}&quot;);">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 align-self-center text-lg-left text-center" style="">
+          <h4 class="">Agricure(BETA) - School Project</h4><img class="img-fluid d-block" src="{{ url_for('static',filename='assets/agricure.png') }}">
+        </div>
+        <div class="col-lg-5 p-3" style="">
+          <h1 class="">Steps To Check</h1>
+          <div class="row">
+            <div class="col-md-12" style="">
+              <ol class="text-capitalize" style="">
+                <li>
+                  <h5>Click the picture of your plant</h5>
+                </li>
+                <li>
+                  <h5>Open our Application</h5>
+                </li>
+                <li>
+                  <h5>Upload the Image</h5>
+                </li>
+                <li>
+                  <h5>Wait For the Results</h5>
+                </li>
+                <li>
+                  <h5>Do The Treatment as Advised</h5>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Intro -->
+  <div class="container">
+      <div class="row bg-primary my-5">
+        <div class="p-4 col-md-12" style="">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="">Output for the Given Image</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5" style="">
+              <div class="row">
+                <div class="col-md-10" style="">
+                  <h2 class="mb-3">Parameters</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h3 class="mb-3">Plant Name</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h3 class="mb-3">Disease Name</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h3 class="mb-3">Treatment</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" style="">
+              <div class="row">
+                <div class="col-md-12" style="">
+                  <h2 class="mb-3">Results</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h4 class="mb-3">{{plant}}</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h4 class="mb-3">{{disease}}</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h4 class="mb-3" contenteditable="true">{{treatment}}</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Gallery -->
+  <!-- Menu -->
+  <!-- Carousel reviews -->
+  <!-- Carousel venue -->
+  <!-- Events -->
+  <!-- Parallax section -->
+  <!-- Footer -->
+  <!-- JavaScript dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- Script: Smooth scrolling between anchors in the same page -->
+  <script src="{{ url_for('static',filename='js/smooth-scroll.js') }}"></script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+</body>
+
+</html>S
